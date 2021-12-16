@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath group: 'org.hsqldb', name: 'hsqldb', version: gradle.hsqldbVersion
+    }
+}
+
+plugins {
+    id 'java'
+    id "application"
+}
+
+apply from: 'HSQLDB.gradle'
+apply plugin : "java"
+group 'org.example'
+version '1.0-SNAPSHOT'
+ext {
+    javaMainClass = "com.company.Main"
+}
+application {
+    mainClass.set(javaMainClass)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.0'
+    testImplementation group: 'org.hsqldb', name: 'hsqldb', version: '2.6.1'
+    implementation 'log4j:log4j:1.2.17'
+}
+
+test {
+    useJUnitPlatform()
+}
+
