@@ -6,7 +6,7 @@
 
 Since this gradle java project , we'll use gradle tasks to run the application from command line.
 
-Step 1:  Navigate to project root folder.
+Step 1:  Navigate to project root folder.      **code-assignment-solution**
 
 Step 2 :  gradle run --args "filepath"          
           For example , below is the gradle command :  
