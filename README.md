@@ -21,7 +21,7 @@ Step 3:   To view the results which are stored in DB table, we can using below g
 
 ## Solution description:
 
-1. Entry point of the application is "Main.java" file.
+1. Entry point of the application is "Main.java" file at location rootproject/src/main.
 2. I'm reading logfile.txt and creating event objects read from log file. 
 3. Calculation of Event duration is done and a HashMap is created with eventId as Key and event duration as value. 
 4. Flagging any long events that take longer than 4ms using findLongEvent() method and writing the found event details to file-based HSQLDB.
