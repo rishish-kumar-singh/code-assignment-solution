@@ -13,7 +13,7 @@ Step 2 :  gradle run --args "filepath"
           
           gradle run --args "C:\\Users\\username\\solution\\src\\main\\resources\\logs\\logfile.txt"
          
-Step 3:   To view the results which are stored in DB table, we can using below gradle task command:
+Step 3:   To view the results which are stored in DB table, we can use below gradle task command:
 
           gradle readDBTable
  
