@@ -4,7 +4,7 @@
 
 ## How to run the application from command line ?
 
-Since this gradle java project , we'll use gradle tasks to run the application from command line.
+Since this is gradle java project , we'll use gradle tasks to run the application from command line.
 
 Step 1:  Navigate to project root folder.      **code-assignment-solution**
 
